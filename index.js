@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 let DB = 'mongodb+srv://pruthvi:Pruthvi143@cluster0-yn2kx.mongodb.net/RESTAPI?retryWrites=true&w=majority';
 
-mongoose.connect('mongodb://localhost:27017/contactapi', { useNewUrlParser: true});
+mongoose.connect(DB, { useNewUrlParser: true});
 var db = mongoose.connection;
 
 if(!db)
