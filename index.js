@@ -10,9 +10,9 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
-let DB = 'mongodb+srv://pruthvi:Pruthvi143@cluster0-yn2kx.mongodb.net/RESTAPI?retryWrites=true&w=majority';
+let config = 'mongodb+srv://pruthvi:Pruthvi143@cluster0-yn2kx.mongodb.net/RESTAPI?retryWrites=true&w=majority';
 
-mongoose.connect(DB, { useNewUrlParser: true});
+mongoose.connect(config, { useNewUrlParser: true});
 var db = mongoose.connection;
 
 if(!db)
