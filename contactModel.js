@@ -21,7 +21,7 @@ var contactSchema = mongoose.Schema({
         default: Date.now()
     }
 },{
-    "collection": "contacts"
+    collection: "contacts"
 });
 
 //exports contacts model
