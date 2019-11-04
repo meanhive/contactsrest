@@ -24,5 +24,3 @@ router.route('/contacts/:contact_id')
     .delete(contactController.delete);
 
 module.exports = router;
-
-module.exports = router;
